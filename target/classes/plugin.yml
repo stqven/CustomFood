@@ -1,0 +1,8 @@
+name: CustomFood
+main: com.inv.CustomFoodPlugin
+version: 1.0
+author: stqv
+api-version: 1.16
+depend: [ProtocolLib]
+commands:
+  customfood:

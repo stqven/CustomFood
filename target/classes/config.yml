@@ -1,0 +1,87 @@
+# Leave any message empty to remove it
+# Permissions: customfood.admin
+Inventories:
+  Custom-Item:
+    Title: "Custom Item Bench"
+    set-name:
+      name: "&eSet Name"
+      lore:
+        - "&7Change the name of the current item"
+    set-lore:
+      name: "&eSet Lore"
+      lore:
+        - "&7Change the lore of the current item"
+    set-head:
+      name: "&eGive Head"
+      lore:
+        - "&7Give a skin to your head"
+    set-food:
+      name: "&eSet Food"
+      lore:
+        - "&7Food: %food%"
+        - "&bLeft-Click &7to Increase"
+        - "&bRight-Click &7to Decrease"
+    add-potions:
+      name: "&eAdd Potions"
+      lore:
+        - "&7Add some potinos to the current item"
+    set-saturation:
+      name: "&eSet Saturation"
+      lore:
+        - "&7Saturation: &b%saturation%"
+        - "&bLeft-Click &7to Increase"
+        - "&bRight-Click &7to Decrease"
+    save:
+      name: "&aExit and Save"
+      lore:
+        - ""
+  Potions:
+    Title: "Add Potions"
+    name: "&e%potion% &8(&7%power%&8)"
+    lore:
+      - "&7Duration: &b%duration%"
+      - "&7Click to &bIncrease/Decrease &7power"
+      - "&7Shift-Click to &bIncrease/Decrease &7duration"
+    lore-add:
+      - "&eMiddle-Click to &aADD &ethis"
+    lore-remove:
+      - "&eMiddle-Click to &cREMOVE &ethis"
+    back:
+      name: "&eGo Back"
+      lore:
+        - ""
+  Custom-Recipe:
+    Title: "Custom Recipe Bench"
+    save:
+      name: "&aExit and Save"
+      lore:
+        - ""
+Messages:
+  prefix: "&8| &bCustom Food &8|&7"
+  invalid-head-name: "%prefix% &cYou have entered an invalid head name"
+  not-head-item: "%prefix% &cThe item you are editing is not a head"
+  no-item-in-hand: "%prefix% &cThere's no item in your main hand"
+  config-reloaded: "%prefix% &aConfig has been reloaded!"
+  edited-item-exist: "%prefix% &cThis name is already taken for another item"
+  edited-item-not-exist: "%prefix% &cThere's not saved item with that name"
+  recipe-exist: "%prefix% &cThis name is already taken for another recipe"
+  recipe-not-exist: "%prefix% &cThere's not saved recipe with that name"
+  player-offline: "%prefix% &cPlayer &e%player% &cisn't online"
+  not-allowed-item: "%prefix% &cYou can only edit heads/food items"
+  item-removed: "%prefix% &aItem &e(%name%) &ahas been successfully removed!"
+  recipe-removed: "%prefix% &aRecipe &e(%name%) &ahas been successfully removed!"
+  same-ingredients: "%prefix% &cThere's another recipe with same ingredients!"
+  no-result: "%prefix% &cThere should be a result to make a recipe"
+  no-perms: "%prefix% &cYou don't have permissions to do this"
+  commands:
+    plugin-commands: "%prefix% &bPlugin Commands: &7(Clickable)"
+    editItem: "%prefix% &e/CustomFood editItem [Item] &8* &7Opens Items Bench"
+    craft: "%prefix% &e/CustomFood craft [Recipe] &8* &7Opens Recipes Bench"
+    give: "%prefix% &e/CustomFood give [Item] <Player> &8* &7Give a custom item to specific player"
+    removeItem: "%prefix% &e/CustomFood removeItem [Item] &8* &7Unsave a custom item"
+    removeRecipe: "%prefix% &e/CustomFood removeRecipe [Recipe] &8* &7Remove a custom recipe"
+    reload: "%prefix% &e/CustomFood reload &8* &7Reloads &aconfig.yml &7file"
+command-alias:
+  - "customitem"
+  - "ci"
+  - "cf"
